@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Guohao Chen</title>
+
+<style>
+	html{background: #eeefff;}
+	*{margin: 0; padding: 0; font-family: "微软雅黑";letter-spacing: 1px;}
+	a{text-decoration: none;}
+	div{float: left;}
+	.container{
+		position: absolute;
+		width: 940px;
+		height: 100%;
+		margin: auto;
+		top: 0; right: 0; bottom: 0; left: 0;
+		/*background: #eee;*/
+		/*border: 1px solid #000;*/
+	}
+
+	.content{
+		width: 100%;
+	}
+
+	.base-info{
+		background: rgb(47,47,47);
+		height: 265px;
+		color: #fff;
+		letter-spacing: 2px;
+	}
+
+	/*照片*/
+	.my-photo{
+		width: 18%;
+		height: 250px;
+		margin: 5px 20px auto;
+		float: left;
+		/*border: 1px solid #fff;*/
+	}
+
+	/*姓名 求职岗位*/
+	.name-target-job{
+		width: 33%;
+		height: 230px;
+		margin: 15px auto;
+		text-align: right;
+
+		/*border: 1px solid #fff;*/
+	}
+	.name-target-job h4{
+		margin: 8px 15px;
+		font-family: "微软雅黑";
+	}
+	.name-target-job h3{
+		margin: 8px 15px;
+		font-family: "仿宋";
+	}
+	.name{
+		margin: 50px 15px auto 8px;
+	}
+	.target-title{
+		position: relative;
+		text-align: left;
+		left: -10px;
+		top: 45px;
+		/*color: #ccc;*/
+	}
+
+	/*其他信息(居住地、出生年月、联系方式)*/
+	.other-info{
+		width: 41%;
+		height: 230px;
+		margin: -15px auto 10px 20px;
+		text-align: left;
+		line-height: 26px;
+
+		/*border: 1px solid #fff;*/
+	}
+	.other-info .other-info-item{
+		margin: 20px auto;
+		font-size: 16px;
+	}
+	.other-info .other-info-item a{
+		color: #fff;
+	}
+	.other-info .other-info-item .other-info-icon{
+		float: left;
+		width: 26px;
+		height: 26px;
+		background: url("icons.png") no-repeat;
+		margin-right: 2px;
+		border-radius: 26px;
+
+		/*border: 1px solid #fff;*/
+	}
+	.other-info .other-info-item .addr{
+		background-position: -165px -237px;
+	}
+	.other-info .other-info-item .birth{
+		background-position: -354px -190px;
+	}
+	.other-info .other-info-item .tel{
+		background-position: -164px -852px;
+	}
+	.other-info .other-info-item .mail{
+		background-position: -117px -1516px;
+	}
+	.other-info .other-info-item .git{
+		background-position: -306px -663px;
+	}
+	.other-info .other-info-item .blog{
+		background-position: -70px -1612px;
+	}
+
+	/*正文*/
+	.main{
+		width: 94%;
+		height: 1000px;
+		margin: auto 2.7% auto;
+		/*background: #fff;*/
+
+		/*border: 1px solid #000;*/
+	}
+	.main div{
+		width: 100%;
+	}
+	.main .title-icon{
+		float: left;
+		width: 40px;
+		height: 40px;
+		background: url("main-icons.jpg") no-repeat;
+		/*background-size: 988px 3159px;*/
+		margin: auto 10px auto;
+		border: 1px solid #000;
+		border-radius: 40px;
+	}
+	.main .main-item-title{
+		line-height: 40px;
+	}
+	.main .main-item-title span{
+		vertical-align: bottom;
+		float: right;
+		font-size: 18px;
+		line-height: 18px;
+		margin-top: 20px;
+		margin-right: 5px;
+	}
+	.main .title-underline{
+		width: 100%;
+		margin: 5px auto 3px;
+		border: 0;
+		border-bottom: 2px solid #000;
+	}
+	/*专业技能*/
+	.main .skill .skill-icon{
+		background-position: -529px -960px;
+	}
+
+	.main .main-item{
+		margin-top: 45px;
+	}
+
+	.main .content{
+		/*height: 150px;*/
+		width: 99.5%;
+		border: 2px solid #000;
+		font-weight: 800;
+	}
+	.main .content ul{
+		width: 89.5%;
+		float: left;
+		margin-left: 45px;
+	}
+	.main .content ul li{
+		float: left;
+		width: 100%;
+		margin: 10px auto;
+		/*border:1px solid red;*/
+	}
+	.main .skill .content ul li span{
+		float: right;
+		margin-left: 35px;
+	}
+
+	/*教育经历*/
+	.main .education .education-icon{
+		background-position: -486px -960px;
+	}
+	.main .education .content p span{
+		letter-spacing: 0;
+	}
+	.main .education .content .scholl span{
+		/*border: 1px solid red;*/
+		margin-right: 35px;
+	}
+	.main .education .content .class{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.main .education .content .class span{
+		font-weight: 400;
+		margin-right: 10px;
+	}
+	.main .education .content .award span{
+		/*font-weight: 400;*/
+		/*margin-right: 10px;*/
+		float: left;
+		/*border: 1px solid red;*/
+		width: 48.5%;
+	}
+
+	/*项目经历*/
+	.main .project .project-icon{
+		background-position: -45px -552px;
+	}
+	.main .project .content ul li p:first-child{
+		font-size: 22px;
+		line-height: 22px;
+		color: rgb(7,55,99);
+	}
+	.main .project .content ul li p{
+		width: 100%;
+		float: left;
+		margin-top: 5px;
+		font-weight: 400;
+	}
+	.main .project .content ul li p span{
+		float: left;
+		width: 30%;
+		font-weight: 800;
+		/*border:1px solid red;*/
+		
+	}
+	.main .project .content ul li p img{
+		width: 385px;
+		height: 205px;
+	}
+	/*自我评价*/
+	.main .evaluation .evaluation-icon{
+		background-position: -310px -510px;
+	}
+	.main .evaluation .content p{
+		width: 90%;
+		float: left;
+		margin: 10px auto 10px 20px;
+		font-weight: 800;
+		font-size: 20px;
+	}
+
+</style>
+
+
+</head>
+<body>
+	
+	<div class="container">
+		
+	<div class="content">
+		<!-- 基本信息 -->
+		<div class="base-info">
+			
+			<img name="myphoto" src="myphoto.jpg" alt="Guohao Chen" class="my-photo">
+
+			<div class="name-target-job">
+				<h1 class="name">陈国豪</h1>
+				<h4>本科 计算机科学与技术</h4>
+				<h3 class="target-title">求职意向:</h3>
+				<h3 class="target-job">游戏服务端程序员</h3>
+				<h3 class="target-job">Unreal客户端程序员</h3>
+			</div>
+
+			<div class="other-info">
+				<p class="other-info-item">
+					<i class="other-info-icon addr"></i>
+					现居住地: 北京市朝阳区
+				</p>
+				<p class="other-info-item">
+					<i class="other-info-icon birth"></i>
+					出生年月: 1996年4月
+				</p>
+				<p class="other-info-item">
+					<i class="other-info-icon tel"></i>
+					联系电话: 18294062469
+				</p>
+				<p class="other-info-item">
+					<i class="other-info-icon mail"></i>
+					电子邮箱: 303snowing@gmail.com
+				</p>
+				<p class="other-info-item">
+					<i class="other-info-icon git"></i>
+					GitHub : <a href="https://github.com/303snowing">github.com/303snowing</a>
+				</p>
+				<p class="other-info-item">
+					<i class="other-info-icon blog"></i>
+					个人博客: <a href="http://blog.csdn.net/u012793104?viewmode=contents">blog.csdn.net/u012793104</a>
+				</p>
+			</div>
+
+		</div>
+
+		<!-- 正文 -->
+		<div class="main">
+			
+			<div class="main-item skill">
+				
+				<i class="title-icon skill-icon"></i>
+				<h2 class="main-item-title">专业技能
+					<span>Professional Skill</span>
+				</h2>
+				<hr class="title-underline">
+				<div class="content">
+					<ul>
+						<li>熟悉C++基础知识(面向对象思想、继承、多态、虚函数)<span>14个月</span></li>
+						<li>熟悉UE4蓝图(蓝图编程、动画、行为树)，能使用蓝图实现中高难度功能<span>12个月</span></li>
+						<li>熟悉JAVA(有实操经历)、PHP(有项目经历)<span>32个月</span></li>
+						<li>了解Unreal C++，能使用Unreal C++编写基本的游戏功能<span></span></li>
+						<li>了解Python(有实操经历)<span>12个月</span></li>
+						<li>了解常用数据结构(栈、队列、链表、树、图)<span></span></li>
+						<li>了解常用算法思想(分治、贪心、动态规划)<span></span></li>
+						<li>了解Web安全相关知识(SQL注入、DDos攻击、XSS跨站攻击)<span></span></li>
+						<li>了解Web前端基本技能(HTML、CSS、JS、JQ、Bootstrap，均有实操经历)<span></span></li>
+					</ul>
+				</div>
+
+			</div>
+
+
+			<div class="main-item education">
+				
+				<i class="title-icon education-icon"></i>
+				<h2 class="main-item-title">教育经历
+					<span>Education</span>
+				</h2>
+				<hr class="title-underline">
+				<div class="content">
+					<ul>
+						<li>
+							
+							<p class="scholl">
+								<span>2014.09 - 2018.07</span>
+								<span>本科</span>
+								<span>陇东学院</span>
+								<span>计算机科学与技术</span>
+							</p>
+							<p class="class">主修课程<br>
+								<span>C语言</span>
+								<span>JAVA</span>
+								<span>JavaWeb程序设计</span>
+								<span>数据结构</span>
+								<span>操作系统</span>
+								<span>计算机组成原理</span>
+								<span>计算机网络</span>
+								<span>算法设计基础</span>
+								<span>软件工程</span>
+								<span>数据库概论</span>
+								<span>Oracle数据库</span>
+								<span>JAVA EE程序设计</span>
+							</p>
+							<p class="class">自修技能<br>
+							编程语言:
+								<span>C++</span>
+								<span>PHP+ThinkPHP</span>
+								<span>Python</span>
+								<span>Python爬虫</span>
+								<span>HTML+CSS</span>
+								<span>JavaScript</span>
+								<span>JQuery</span>
+								<br>
+							软件工具:
+								<span>visual studio</span>
+								<span>eclipse</span>
+								<span>idea</span>
+								<span>phpstream</span>
+								<span>mysql</span>
+								<span>linux</span>
+							</p>
+							<p class="class award">证书奖励<br>
+								<span>计算机技术与软件专业技术资格 : 初级程序员</span>
+								<span>2016年国家采矿专业年会 : 国家三等奖</span>
+								<span>2016年全国大学生计算机设计大赛 : 省级二等奖</span>
+								<span>2015年全国大学生创新创业大赛 : 省级优秀奖</span>
+							</p>
+
+						</li>
+						<!-- <li style="list-style:none;">&nbsp;</li> -->
+						<li>
+							<p class="scholl">
+								<span>2017.06 - 2017.10</span>
+								<span>培训</span>
+								<span>VRStar</span>
+								<span>UE4开发工程师</span>
+							</p>
+							<p class="class">主修课程<br>
+								<span>UE4场景搭建</span>
+								<span>UE4蓝图</span>
+								<span>UE4 UI系统</span>
+								<span>UE4动画系统</span>
+								<span>UE4 AI系统</span>
+								<span>UE4材质</span>
+							</p>
+							<p class="class">自修技能<br>
+								<span>C++</span>
+								<span>Unreal C++</span>
+							</p>
+							<p class="class award">证书奖励<br>
+								<span>VRStar首届手撸代码麒麟杯 : 团队一等奖</span>
+								<br>
+							</p>
+						
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="main-item project">
+				
+				<i class="title-icon project-icon"></i>
+				<h2 class="main-item-title">项目经历
+					<span>Project Experience</span>
+				</h2>
+				<hr class="title-underline">
+				<div class="content">
+					<ul>
+						<li>
+							<p>
+								<span>2017.08 — 2017.10</span>
+								<span>Magician【魔法师】</span>
+								<span>项目组长，主程，策划</span>
+							</p>
+							<p>
+								<span>项目描述</span><br>
+								一款探索类VR魔法游戏，语音操控，旨在发掘新的VR游戏交互方式，魔法师通过解谜拾取道具，获得道具中的技能，与游戏场景交互，实现打怪解谜等游戏玩法
+							</p>
+							<p>
+								<span>项目职责</span><br>
+								1. 游戏策划: 策划游戏的玩法，主旨，主要故事情景<br>
+								2. 框架搭建: 使用Visual Studio配合Unreal搭建项目程序框架<br>
+								3. 核心功能实现: 使用C++基于讯飞在线语音听写SDK实现法杖的语音输入功能<br>
+								4. 责任分工: 平衡项目人力资源，保证团队效率最大化<br>
+								5. 进度规划与执行: 根据团队能力规划项目目标，执行计划并落实执行
+							</p>
+							<p>
+								<span>技术难点</span><br>
+								1. 游戏可扩展性: 通过运用工厂设计模式，抽象出道具基类，编写功能接口，使得道具功能多样化<br>
+								2. 语音功能集成: 通过与组员合作交流，配合网络资料以及指导老师的指导，完成了讯飞语音集成到UE4项目中，为项目交互提供了基础支持，语音交互结果可在0.5秒内做出响应<br>
+								3. 语音结果的获取: 通过使用UE4内置库的Json模块完成结果解析，并使用FString类将结果转码返回得到<br>
+								4. 语音延时卡帧: 通过使用UE4内置库的多线程同步，使语音模块独立于游戏主线程运行，并通过蓝图事件解决了卡帧问题
+							</p>
+							<p>
+								<span>项目成果</span><br>
+								<img src="project_1.jpg" alt="" class="project-img">
+								<img src="project_2.jpg" alt="" class="project-img">
+								<img src="project_3.jpg" alt="" class="project-img">
+								<img src="project_4.jpg" alt="" class="project-img">
+							</p>
+							<p>
+								<span>项目总结</span><br>
+								1. 初步了解Unreal的C++编程以及UE4游戏框架<br>
+								1. 学会了如何查阅Unreal源代码使用其中的内置模块<br>
+								2. 学会了如何进行团队协作开发以及基本的团队领导能力<br>
+								3. 通过查阅UE4资料和源码，提高了英文文档阅读能力
+							</p>
+						</li>
+						<li>
+							<p>
+								<span>2016.09 — 2016.10</span>
+								<span style="width:45%">"碧桂园"售楼系统楼盘销控爬虫</span>
+								<span style="width:20%">独立开发</span>
+							</p>
+							<p>
+								<span>项目描述</span><br>
+								承接的个人商用项目，针对南京"碧桂园"售楼系统编写楼盘销控程序，实现系统开放楼盘销控时段登录系统并抢得楼盘销控权
+							</p>
+							<p>
+								<span>项目职责</span><br>
+								1. 程序架构: 使用python语言实现，考虑到多人同时抢销，采用多线程实现程序部分模块<br>
+								2. 后端代码编写: 使用Wing工具用Python3.4编写爬虫，实现目标楼盘定位、楼层筛选及指定房间号的楼盘抢销功能<br>
+								3. 前端代码编写: 使用Python内置的Tkinter库完成简易的用户接口<br>
+								4. 测试验收: 在甲方提供的内部模拟系统中对程序进行测试，并将测试完成的程序提交至甲方
+							</p>
+							<p>
+								<span>技术难点</span><br>
+								1. 目标系统逻辑测试: 通过使用火狐浏览器的Firebug插件，对目标系统进行了测试和分析，得到了目标系统的详细运行流程及数据传输，为爬虫编写提供基础支持<br>
+								2. 多线程协同: 通过查阅网络资料，使用Python内置的Thread库完成了程序里线程编写，针对目标系统逻辑对各线程运行逻辑进行了调整，使的爬取速度提升了3-5倍<br>
+								3. 用户界面的编写: 应用户要求，需要图形化界面，通过查阅网络资料，使用python的Tkinter库完成了简易的界面，用户可通过界面输入指定目标楼盘
+							</p>
+							<p>
+								<span>项目成果</span><br>
+								完成了甲方需求，获得了项目酬金，现在程序可稳定运行。<a target="_blank" href="https://github.com/303snowing/BiGuiYuan_Spider">Github:https://github.com/303snowing/BiGuiYuan_Spider</a>
+								<img src="project_python_1.png" alt="" class="project-img">
+								<img src="project_python_2.png" alt="" class="project-img">
+							</p>
+							<p>
+								<span>项目总结</span><br>
+								1. 初步了解如何与甲方交涉<br>
+								2. 学会了如何查阅资料使用python库
+							</p>
+						</li>
+						<li>
+							<p>
+								<span>2016.06 — 2016.09</span>
+								<span style="width:45%">Arthas实验室官网</span>
+								<span style="width:20%">副组长</span>
+							</p>
+							<p>
+								<span>项目描述</span><br>
+								学校网络技术中心下属实验室官网，包含资料展示、简历投递、博客系统、云盘以及考勤签到系统
+							</p>
+							<p>
+								<span>项目职责</span><br>
+								1. 服务器环境搭建: 基于CentOS6搭建JAVA+PHP运行环境，包含Tomcat、Apache及Nginx服务软件安装配置，网络防火墙配置，版本控制SVN代码库配置，以及FTP服务器配置<br>
+								2. 简历系统编写: 使用ThinkPHP框架编写简历模块，实现简历的投递、查看、删除功能；使用Ajax优化页面体验<br>
+								3. 签到系统编写: 使用TinkPHP框架编写签到模块，实现指定IP段内客户端签到验证；使用mysql提供记录查询统计功能，并反馈给前台数据<br>
+								4. 系统集成: 对整个系统进行集成并且测试各个功能，部署到服务器上线
+							</p>
+							<p>
+								<span>技术难点</span><br>
+								1. Nginx请求转发: 需要将JAVA和PHP请求分别分发至Tomcat和Apache，通过查阅网络资料，配合老师指导，完成了Nginx的转发配置<br>
+								2. 网段客户端验证: 通过使用PHP的IP验证，结合客户端JS脚本获取客户机MAC地址，完成了签到客户机的验证<br>
+								3. JAVA与PHP的集成: 通过配置服务软件，将JAVA与PHP应用目录分离，使用Nginx转发将客户端请求转发到了对应的服务
+							</p>
+							<p>
+								<span>项目成果</span><br>
+								<a target="_blank" href="https://github.com/303snowing/resume_ForArthas">GitHub:https://github.com/303snowing/resume_ForArthas</a>&emsp;|&emsp;
+								<a target="_blank" href="http://arthas.ldxy.edu.cn">Arthas实验室</a>
+								<img src="project-arthas_1.png" alt="" class="project-img">
+								<img src="project-arthas_2.png" alt="" class="project-img">
+							</p>
+							<p>
+								<span>项目总结</span><br>
+								1. 学会了如何部署Web服务器<br>
+								2. 学会了ThinkPHP框架的使用
+							</p>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="main-item evaluation">
+				
+				<i class="title-icon evaluation-icon"></i>
+				<h2 class="main-item-title">自我评价
+					<span>Self-evaluation</span>
+				</h2>
+				<hr class="title-underline">
+				<div class="content">
+					<p>1. 具有良好的程序功底，具备初级程序员技能，学习能力强，善于接受新事物</p>
+					<p>2. 热衷于编程，逻辑思维严谨，思维发散能力强</p>
+					<p>3. 做事认真细致，有主见但不张扬</p>
+					<p>4. 善于与团队沟通，具有良好的团队协作能力</p>
+					<!-- <p>*&nbsp;&nbsp;年轻人应该将青春贡献给自己的未来</p> -->
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	</div>
+
+</body>
+</html>
