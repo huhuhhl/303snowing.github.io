@@ -64,7 +64,7 @@ public class UnrealXunFeiSpeech : ModuleRules
 FWinRec类对应讯飞官方例子的winrec.c文件,是封装的Windows录音功能，在Source/UnrealXunFeiSpeech/Public下创建`WinRec.h`，在Source/UnrealXunFeiSpeech/Private下创建`WinRec.cpp`，并在项目中添加到对应目录下
 > **[WinRec.h][WinRec.h] | [WinRec.cpp][WinRec.cpp]**
 > 由于在其他文件中，均直接或者间接的包含WinRec.h,所以在WinRec.h中添加了自定义的Log标签。
-```
+```C++
 // Fill out your copyright notice in the Description page of Project Settings.
 /*
 * @file
@@ -233,7 +233,7 @@ static FWinRec * winrec = new FWinRec(FString("static winrec be created !"));
 FSpeechRecoginzer类对应讯飞官方例子的speechrecoginzer.c文件，封装了语音在线听写功能，在Source/UnrealXunFeiSpeech/Public下创建`SpeechRecognizer.h`，在Source/UnrealXunFeiSpeech/Private下创建`SpeechRecognizer.cpp`，并在项目中添加到对应目录下
 > **[SpeechRecoginzer.h][SpeechRecoginzer.h] | [SpeechRecoginzer.cpp][SpeechRecoginzer.cpp]**
 > 基于录音接口和讯飞MSC接口封装一个MIC录音识别的模块
-```
+```C++
 // Fill out your copyright notice in the Description page of Project Settings.
 /*
 @file
@@ -335,7 +335,7 @@ static  FSpeechRecoginzer * speechrecoginzer = new FSpeechRecoginzer("static soe
 FXunFeiSpeech类中封装了语音识别的执行方法，包含整体流程控住与事件控制，在Source/UnrealXunFeiSpeech/Public下创建`XunFeiSpeech.h`，在Source/UnrealXunFeiSpeech/Private下创建`XunFeiSpeech.cpp`，并在项目中添加到对应目录下
 > **[XunFeiSpeech.h][XunFeiSpeech.h] | [XunFeiSpeech.cpp][XunFeiSpeech.cpp]**
 > 语音听写(iFly Auto Transform)技术能够实时地将语音转换成对应的文字。
-```
+```C++
 #pragma once
 
 #include <conio.h>
@@ -386,7 +386,7 @@ static FXunFeiSpeech * xunfeispeech = new FXunFeiSpeech(FString("static xunfeisp
 #### 4. 创建`FSpeechTask`类
 FSpeechTask类继承`FNonAbandonableTask`，用来将语音识别作为独立线程启动，避免在语音录入和识别时阻塞游戏主线程，在Source/UnrealXunFeiSpeech/Public下创建`SpeechTask.h`，在Source/UnrealXunFeiSpeech/Private下创建`SpeechTask.cpp`，并在项目中添加到对应目录下
 > **[SpeechTask.h][SpeechTask.h] | [SpeechTask.cpp][SpeechTask.cpp]**
-```
+```C++
 #pragma once
 
 #include "XunFeiSpeech.h"
@@ -414,7 +414,7 @@ class FSpeechTask : public FNonAbandonableTask
 `ASpeechActor`类为蓝图暴露操作方法，包含语音初始化、打开录音、停止录音和退出录音释放资源操作
 
 * [SpeechActor.h][SpeechActor.h] 
-``` C++ 
+```C++ 
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
@@ -464,7 +464,7 @@ public:
 ```
 
 * [SpeechActor.cpp][SpeechActor.cpp] 
-```
+```C++
 // Fill out your copyright notice in the Description page of Project Settings.
 #pragma once
 
