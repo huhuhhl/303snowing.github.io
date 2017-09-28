@@ -23,7 +23,7 @@ demo的引擎版本是4.17.1，使用Visual Studio 2017 15.3
 
 ### **配置讯飞库搜索路径**
 编辑Source/UnrealXunFeiSpeech/UnrealXunFeiSpeech.Build.cs文件，代码如下
-```
+```C++
 // Fill out your copyright notice in the Description page of Project Settings.
 
 using UnrealBuildTool;
