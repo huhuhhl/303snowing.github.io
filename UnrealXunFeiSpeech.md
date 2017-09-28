@@ -1,28 +1,28 @@
-¹Ø¼ü×Ö: Unreal À¶Í¼ ÓïÒôÊ¶±ğ C++
+å…³é”®å­—: Unreal è“å›¾ è¯­éŸ³è¯†åˆ« C++
 
 ---
-*ÓÉÓÚÏîÄ¿ĞèÇó£¬Ê¹ÓÃÓïÒô½øĞĞÓÎÏ·½»»¥£¬²ÈÁËÁ½ÖÜ¶àµÄ¿Ó£¬ÖÕÓÚ¸ã³öÀ´ÁË£¬¼ÇÂ¼Ò»ÏÂ²È¿Ó¾­Àú*
+*ç”±äºé¡¹ç›®éœ€æ±‚ï¼Œä½¿ç”¨è¯­éŸ³è¿›è¡Œæ¸¸æˆäº¤äº’ï¼Œè¸©äº†ä¸¤å‘¨å¤šçš„å‘ï¼Œç»ˆäºæå‡ºæ¥äº†ï¼Œè®°å½•ä¸€ä¸‹è¸©å‘ç»å†*
 
-ÏÈÌùÉÏdemo£ºhttps://github.com/303snowing/UnrealXunFeiSpeech
-demoµÄÒıÇæ°æ±¾ÊÇ4.17.1£¬Ê¹ÓÃVisual Studio 2017 15.3
+å…ˆè´´ä¸Šdemoï¼šhttps://github.com/303snowing/UnrealXunFeiSpeech
+demoçš„å¼•æ“ç‰ˆæœ¬æ˜¯4.17.1ï¼Œä½¿ç”¨Visual Studio 2017 15.3
 
 ---
-### **×¼±¸¹¤×÷**
-1. ÏÈµ½¿Æ´óÑ¶·ÉµÄÓïÒôÆ½Ì¨×¢²á¡¢´´½¨Ò»¸öÓ¦ÓÃ(Õâ²½±ØĞë£¬ÒòÎªÖ»ÓĞÓµÓĞappid²ÅÄÜÏÂÔØ¶ÔÓ¦µÄsdk)
-2. ÏÂÔØÔÚÏßÓïÒôÌıĞ´sdk£ºhttp://www.xfyun.cn/services/voicedictation£¬½âÑ¹
-3. ½¨Á¢Unreal C++¿Õ°×ÏîÄ¿£¬²»ĞèÒª°üº¬Start Content£¬Ê¾ÀıµÄÏîÄ¿Ãû³ÆÎª`UnrealXunFeiSpeech`
-4. ±àÒëÏîÄ¿²¢Æô¶¯ÏîÄ¿ÊµÀı
-5. ½¨Á¢Ò»¸ö¼Ì³Ğ×ÔActorµÄC++Àà£¬¿É¼ûĞÔÎªPublic
+### **å‡†å¤‡å·¥ä½œ**
+1. å…ˆåˆ°ç§‘å¤§è®¯é£çš„è¯­éŸ³å¹³å°æ³¨å†Œã€åˆ›å»ºä¸€ä¸ªåº”ç”¨(è¿™æ­¥å¿…é¡»ï¼Œå› ä¸ºåªæœ‰æ‹¥æœ‰appidæ‰èƒ½ä¸‹è½½å¯¹åº”çš„sdk)
+2. ä¸‹è½½åœ¨çº¿è¯­éŸ³å¬å†™sdkï¼šhttp://www.xfyun.cn/services/voicedictationï¼Œè§£å‹
+3. å»ºç«‹Unreal C++ç©ºç™½é¡¹ç›®ï¼Œä¸éœ€è¦åŒ…å«Start Contentï¼Œç¤ºä¾‹çš„é¡¹ç›®åç§°ä¸º`UnrealXunFeiSpeech`
+4. ç¼–è¯‘é¡¹ç›®å¹¶å¯åŠ¨é¡¹ç›®å®ä¾‹
+5. å»ºç«‹ä¸€ä¸ªç»§æ‰¿è‡ªActorçš„C++ç±»ï¼Œå¯è§æ€§ä¸ºPublic
 
-> Ñ¶·É¿âÔÚ Windows_voice_1166_59940824/libs ºÍ Windows_voice_1166_59940824/bin Ä¿Â¼ÏÂ,Í·ÎÄ¼şÔÚ Windows_voice_1166_59940824/include Ä¿Â¼ÏÂ
+> è®¯é£åº“åœ¨ Windows_voice_1166_59940824/libs å’Œ Windows_voice_1166_59940824/bin ç›®å½•ä¸‹,å¤´æ–‡ä»¶åœ¨ Windows_voice_1166_59940824/include ç›®å½•ä¸‹
 
-### **µ¼ÈëÑ¶·É¿â**
-1. ÔÚÏîÄ¿¸ùÄ¿Â¼ÏÂ½¨Á¢Ò»¸öXunFeiÎÄ¼ş¼Ğ
-2. ½«Windows_voice_1166_59940824/libsºÍWindows_voice_1166_59940824/includeÄ¿Â¼¿½±´µ½XunFeiÎÄ¼ş¼ĞÖĞ
-3. ½«Windows_voice_1166_59940824/binÏÂµÄ`msc_x64.dll`ÎÄ¼ş¿½±´µ½ÏîÄ¿¹¤³ÌµÄBinaries/Win64Ä¿Â¼ÏÂ(¸Ã.dllÎÄ¼şÔÚÏîÄ¿Ç¨ÒÆ»ò´ò°ü¹ı³ÌÖĞ¶¼²»¿ÉÈ±ÉÙ)
+### **å¯¼å…¥è®¯é£åº“**
+1. åœ¨é¡¹ç›®æ ¹ç›®å½•ä¸‹å»ºç«‹ä¸€ä¸ªXunFeiæ–‡ä»¶å¤¹
+2. å°†Windows_voice_1166_59940824/libså’ŒWindows_voice_1166_59940824/includeç›®å½•æ‹·è´åˆ°XunFeiæ–‡ä»¶å¤¹ä¸­
+3. å°†Windows_voice_1166_59940824/binä¸‹çš„`msc_x64.dll`æ–‡ä»¶æ‹·è´åˆ°é¡¹ç›®å·¥ç¨‹çš„Binaries/Win64ç›®å½•ä¸‹(è¯¥.dllæ–‡ä»¶åœ¨é¡¹ç›®è¿ç§»æˆ–æ‰“åŒ…è¿‡ç¨‹ä¸­éƒ½ä¸å¯ç¼ºå°‘)
 
-### **ÅäÖÃÑ¶·É¿âËÑË÷Â·¾¶**
-±à¼­Source/UnrealXunFeiSpeech/UnrealXunFeiSpeech.Build.csÎÄ¼ş£¬´úÂëÈçÏÂ
+### **é…ç½®è®¯é£åº“æœç´¢è·¯å¾„**
+ç¼–è¾‘Source/UnrealXunFeiSpeech/UnrealXunFeiSpeech.Build.csæ–‡ä»¶ï¼Œä»£ç å¦‚ä¸‹
 ```C++
 // Fill out your copyright notice in the Description page of Project Settings.
 
@@ -46,24 +46,24 @@ public class UnrealXunFeiSpeech : ModuleRules
 
         // To include OnlineSubsystemSteam, add it to the plugins section in your uproject file with the Enabled attribute set to true
 
-		// ´Ë´¦Ö¸¶¨ÎÄ¼şËÑË÷Â·¾¶
+		// æ­¤å¤„æŒ‡å®šæ–‡ä»¶æœç´¢è·¯å¾„
         PrivateIncludePaths.Add("UnrealXunFeiSpeech/Private");
         PublicIncludePaths.Add("UnrealXunFeiSpeech/Public");
-		//ÒıÈëÑ¶·É¾²Ì¬¿â
+		//å¼•å…¥è®¯é£é™æ€åº“
         PublicLibraryPaths.AddRange(new string[] { "..\\XunFei\\libs" });
         PublicAdditionalLibraries.AddRange(new string[] { "msc_x64.lib" });
-		//Ìí¼ÓÎÄ¼şËÑË÷Â·¾¶
+		//æ·»åŠ æ–‡ä»¶æœç´¢è·¯å¾„
         PublicIncludePaths.AddRange(new string[] { "..\\XunFei\\include" });
     }
 }
 
 ```
 
-### ±àĞ´´úÂë
-#### 1. ´´½¨`FWinRec`Àà
-FWinRecÀà¶ÔÓ¦Ñ¶·É¹Ù·½Àı×ÓµÄwinrec.cÎÄ¼ş,ÊÇ·â×°µÄWindowsÂ¼Òô¹¦ÄÜ£¬ÔÚSource/UnrealXunFeiSpeech/PublicÏÂ´´½¨`WinRec.h`£¬ÔÚSource/UnrealXunFeiSpeech/PrivateÏÂ´´½¨`WinRec.cpp`£¬²¢ÔÚÏîÄ¿ÖĞÌí¼Óµ½¶ÔÓ¦Ä¿Â¼ÏÂ
+### ç¼–å†™ä»£ç 
+#### 1. åˆ›å»º`FWinRec`ç±»
+FWinRecç±»å¯¹åº”è®¯é£å®˜æ–¹ä¾‹å­çš„winrec.cæ–‡ä»¶,æ˜¯å°è£…çš„Windowså½•éŸ³åŠŸèƒ½ï¼Œåœ¨Source/UnrealXunFeiSpeech/Publicä¸‹åˆ›å»º`WinRec.h`ï¼Œåœ¨Source/UnrealXunFeiSpeech/Privateä¸‹åˆ›å»º`WinRec.cpp`ï¼Œå¹¶åœ¨é¡¹ç›®ä¸­æ·»åŠ åˆ°å¯¹åº”ç›®å½•ä¸‹
 > **[WinRec.h][WinRec.h] | [WinRec.cpp][WinRec.cpp]**
-> ÓÉÓÚÔÚÆäËûÎÄ¼şÖĞ£¬¾ùÖ±½Ó»òÕß¼ä½ÓµÄ°üº¬WinRec.h,ËùÒÔÔÚWinRec.hÖĞÌí¼ÓÁË×Ô¶¨ÒåµÄLog±êÇ©¡£
+> ç”±äºåœ¨å…¶ä»–æ–‡ä»¶ä¸­ï¼Œå‡ç›´æ¥æˆ–è€…é—´æ¥çš„åŒ…å«WinRec.h,æ‰€ä»¥åœ¨WinRec.hä¸­æ·»åŠ äº†è‡ªå®šä¹‰çš„Logæ ‡ç­¾ã€‚
 ```C++
 // Fill out your copyright notice in the Description page of Project Settings.
 /*
@@ -83,7 +83,7 @@ FWinRecÀà¶ÔÓ¦Ñ¶·É¹Ù·½Àı×ÓµÄwinrec.cÎÄ¼ş,ÊÇ·â×°µÄWindowsÂ¼Òô¹¦ÄÜ£¬ÔÚSource/Unreal
 * @date		2017/09/09
 */
 #pragma once
-//°üº¬ÏîÄ¿ÎÄ¼ş£¬¿ÉÔÚ¸ÃÎÄ¼şÖĞÊ¹ÓÃUnrealµÄ¿â
+//åŒ…å«é¡¹ç›®æ–‡ä»¶ï¼Œå¯åœ¨è¯¥æ–‡ä»¶ä¸­ä½¿ç”¨Unrealçš„åº“
 #include "UnrealXunFeiSpeech.h"
 
 #include <stdlib.h>
@@ -91,7 +91,7 @@ FWinRecÀà¶ÔÓ¦Ñ¶·É¹Ù·½Àı×ÓµÄwinrec.cÎÄ¼ş,ÊÇ·â×°µÄWindowsÂ¼Òô¹¦ÄÜ£¬ÔÚSource/Unreal
 #include <mmsystem.h>   
 #include <process.h>
 #include <errno.h>
-// ×Ô¶¨Òå¶¨Òå¾²Ì¬Log °üº¬WinRec.hÊ¹ÓÃ
+// è‡ªå®šä¹‰å®šä¹‰é™æ€Log åŒ…å«WinRec.hä½¿ç”¨
 DEFINE_LOG_CATEGORY_STATIC(SnowingLog, Log, All);
 DEFINE_LOG_CATEGORY_STATIC(SnowingWarning, Warning, All);
 DEFINE_LOG_CATEGORY_STATIC(SnowingError, Error, All);
@@ -116,12 +116,12 @@ struct recorder {
 	void * bufheader;
 	unsigned int bufcount;
 };
-//Ã¿¸öÀàÖĞÉùÃ÷×Ô¼ºµÄLog±êÇ©£¬·½±ãµ÷ÊÔ
+//æ¯ä¸ªç±»ä¸­å£°æ˜è‡ªå·±çš„Logæ ‡ç­¾ï¼Œæ–¹ä¾¿è°ƒè¯•
 DECLARE_LOG_CATEGORY_EXTERN(WinRec, Warning, All);
 
 class FWinRec
 {
-	//½«»Øµ÷º¯ÊıÉùÃ÷ÎªÓÑÔª£¬ÒÔ·½±ã·ÃÎÊË½ÓĞ·½·¨
+	//å°†å›è°ƒå‡½æ•°å£°æ˜ä¸ºå‹å…ƒï¼Œä»¥æ–¹ä¾¿è®¿é—®ç§æœ‰æ–¹æ³•
 	friend static unsigned int  __stdcall record_thread_proc(void * para); /* the recording callback thread procedure */
 
 public:
@@ -224,20 +224,20 @@ public:
 	*/
 	int is_record_stopped(struct recorder *rec);
 };
-//¶¨ÒåÒ»¸ö¾²Ì¬±äÁ¿¹©C++´úÂëÊ¹ÓÃ£¬ÒÔ·ÃÎÊÈ«¾Ö±äÁ¿
+//å®šä¹‰ä¸€ä¸ªé™æ€å˜é‡ä¾›C++ä»£ç ä½¿ç”¨ï¼Œä»¥è®¿é—®å…¨å±€å˜é‡
 static FWinRec * winrec = new FWinRec(FString("static winrec be created !"));
 
 
 ```
-#### 2.´´½¨`FSpeechRecoginzer`Àà
-FSpeechRecoginzerÀà¶ÔÓ¦Ñ¶·É¹Ù·½Àı×ÓµÄspeechrecoginzer.cÎÄ¼ş£¬·â×°ÁËÓïÒôÔÚÏßÌıĞ´¹¦ÄÜ£¬ÔÚSource/UnrealXunFeiSpeech/PublicÏÂ´´½¨`SpeechRecognizer.h`£¬ÔÚSource/UnrealXunFeiSpeech/PrivateÏÂ´´½¨`SpeechRecognizer.cpp`£¬²¢ÔÚÏîÄ¿ÖĞÌí¼Óµ½¶ÔÓ¦Ä¿Â¼ÏÂ
+#### 2.åˆ›å»º`FSpeechRecoginzer`ç±»
+FSpeechRecoginzerç±»å¯¹åº”è®¯é£å®˜æ–¹ä¾‹å­çš„speechrecoginzer.cæ–‡ä»¶ï¼Œå°è£…äº†è¯­éŸ³åœ¨çº¿å¬å†™åŠŸèƒ½ï¼Œåœ¨Source/UnrealXunFeiSpeech/Publicä¸‹åˆ›å»º`SpeechRecognizer.h`ï¼Œåœ¨Source/UnrealXunFeiSpeech/Privateä¸‹åˆ›å»º`SpeechRecognizer.cpp`ï¼Œå¹¶åœ¨é¡¹ç›®ä¸­æ·»åŠ åˆ°å¯¹åº”ç›®å½•ä¸‹
 > **[SpeechRecoginzer.h][SpeechRecoginzer.h] | [SpeechRecoginzer.cpp][SpeechRecoginzer.cpp]**
-> »ùÓÚÂ¼Òô½Ó¿ÚºÍÑ¶·ÉMSC½Ó¿Ú·â×°Ò»¸öMICÂ¼ÒôÊ¶±ğµÄÄ£¿é
+> åŸºäºå½•éŸ³æ¥å£å’Œè®¯é£MSCæ¥å£å°è£…ä¸€ä¸ªMICå½•éŸ³è¯†åˆ«çš„æ¨¡å—
 ```C++
 // Fill out your copyright notice in the Description page of Project Settings.
 /*
 @file
-@brief »ùÓÚÂ¼Òô½Ó¿ÚºÍÑ¶·ÉMSC½Ó¿Ú·â×°Ò»¸öMICÂ¼ÒôÊ¶±ğµÄÄ£¿é
+@brief åŸºäºå½•éŸ³æ¥å£å’Œè®¯é£MSCæ¥å£å°è£…ä¸€ä¸ªMICå½•éŸ³è¯†åˆ«çš„æ¨¡å—
 
 @author		taozhang9
 @date		2016/05/27
@@ -292,7 +292,7 @@ struct speech_rec {
 
 DECLARE_LOG_CATEGORY_EXTERN(SpeechRecoginzer, Warning, All);
 
-//ÉùÃ÷´úÀí
+//å£°æ˜ä»£ç†
 //DECLARE_DELEGATE_RetVal(FString, OnGetResult)
 
 class FSpeechRecoginzer
@@ -326,15 +326,15 @@ public:
 
 };
 
-//¶¨ÒåÒ»¸ö¾²Ì¬±äÁ¿¹©C++´úÂëÊ¹ÓÃ£¬ÒÔ·ÃÎÊÈ«¾Ö±äÁ¿
+//å®šä¹‰ä¸€ä¸ªé™æ€å˜é‡ä¾›C++ä»£ç ä½¿ç”¨ï¼Œä»¥è®¿é—®å…¨å±€å˜é‡
 static  FSpeechRecoginzer * speechrecoginzer = new FSpeechRecoginzer("static soeech recoginzer be created !");
 
 ```
 
-#### 3. ´´½¨`FXunFeiSpeech`Àà
-FXunFeiSpeechÀàÖĞ·â×°ÁËÓïÒôÊ¶±ğµÄÖ´ĞĞ·½·¨£¬°üº¬ÕûÌåÁ÷³Ì¿Ø×¡ÓëÊÂ¼ş¿ØÖÆ£¬ÔÚSource/UnrealXunFeiSpeech/PublicÏÂ´´½¨`XunFeiSpeech.h`£¬ÔÚSource/UnrealXunFeiSpeech/PrivateÏÂ´´½¨`XunFeiSpeech.cpp`£¬²¢ÔÚÏîÄ¿ÖĞÌí¼Óµ½¶ÔÓ¦Ä¿Â¼ÏÂ
+#### 3. åˆ›å»º`FXunFeiSpeech`ç±»
+FXunFeiSpeechç±»ä¸­å°è£…äº†è¯­éŸ³è¯†åˆ«çš„æ‰§è¡Œæ–¹æ³•ï¼ŒåŒ…å«æ•´ä½“æµç¨‹æ§ä½ä¸äº‹ä»¶æ§åˆ¶ï¼Œåœ¨Source/UnrealXunFeiSpeech/Publicä¸‹åˆ›å»º`XunFeiSpeech.h`ï¼Œåœ¨Source/UnrealXunFeiSpeech/Privateä¸‹åˆ›å»º`XunFeiSpeech.cpp`ï¼Œå¹¶åœ¨é¡¹ç›®ä¸­æ·»åŠ åˆ°å¯¹åº”ç›®å½•ä¸‹
 > **[XunFeiSpeech.h][XunFeiSpeech.h] | [XunFeiSpeech.cpp][XunFeiSpeech.cpp]**
-> ÓïÒôÌıĞ´(iFly Auto Transform)¼¼ÊõÄÜ¹»ÊµÊ±µØ½«ÓïÒô×ª»»³É¶ÔÓ¦µÄÎÄ×Ö¡£
+> è¯­éŸ³å¬å†™(iFly Auto Transform)æŠ€æœ¯èƒ½å¤Ÿå®æ—¶åœ°å°†è¯­éŸ³è½¬æ¢æˆå¯¹åº”çš„æ–‡å­—ã€‚
 ```C++
 #pragma once
 
@@ -344,11 +344,11 @@ FXunFeiSpeechÀàÖĞ·â×°ÁËÓïÒôÊ¶±ğµÄÖ´ĞĞ·½·¨£¬°üº¬ÕûÌåÁ÷³Ì¿Ø×¡ÓëÊÂ¼ş¿ØÖÆ£¬ÔÚSource/
 #include "SpeechRecoginzer.h"
 
 /*
-* ÓïÒôÌıĞ´(iFly Auto Transform)¼¼ÊõÄÜ¹»ÊµÊ±µØ½«ÓïÒô×ª»»³É¶ÔÓ¦µÄÎÄ×Ö¡£
+* è¯­éŸ³å¬å†™(iFly Auto Transform)æŠ€æœ¯èƒ½å¤Ÿå®æ—¶åœ°å°†è¯­éŸ³è½¬æ¢æˆå¯¹åº”çš„æ–‡å­—ã€‚
 */
 #define FRAME_LEN	640
 #define BUFFER_SIZE	4096
-// Ê¶±ğ×´Ì¬ÀàĞÍ
+// è¯†åˆ«çŠ¶æ€ç±»å‹
 enum {
 	EVT_START = 0,
 	EVT_STOP,
@@ -368,23 +368,23 @@ public:
 
 	FXunFeiSpeech();
 	FXunFeiSpeech(FString);
-	//ÊÂ¼ş´¥·¢£¬¿ØÖÆÂ¼ÒôµÄ¿ªÊ¼¡¢½áÊø¡¢Óë³ÌĞòµÄÍË³ö
+	//äº‹ä»¶è§¦å‘ï¼Œæ§åˆ¶å½•éŸ³çš„å¼€å§‹ã€ç»“æŸã€ä¸ç¨‹åºçš„é€€å‡º
 	void SetStart();
 	void SetStop();
 	void SetQuit();
-	//Õû¸öÁ÷³Ì¿ØÖÆ
+	//æ•´ä¸ªæµç¨‹æ§åˆ¶
 	void speech_mic(const char* session_beging_params);
-	//½«Ê¶±ğ½á¹û·µ»Ø
+	//å°†è¯†åˆ«ç»“æœè¿”å›
 	const char* get_result() const;
 
 };
-//¶¨Òå¾²Ì¬ÊµÀı·½±ãÆäËûC++´úÂëÊ¹ÓÃ
+//å®šä¹‰é™æ€å®ä¾‹æ–¹ä¾¿å…¶ä»–C++ä»£ç ä½¿ç”¨
 static FXunFeiSpeech * xunfeispeech = new FXunFeiSpeech(FString("static xunfeispeech be created !"));
 
 ```
 
-#### 4. ´´½¨`FSpeechTask`Àà
-FSpeechTaskÀà¼Ì³Ğ`FNonAbandonableTask`£¬ÓÃÀ´½«ÓïÒôÊ¶±ğ×÷Îª¶ÀÁ¢Ïß³ÌÆô¶¯£¬±ÜÃâÔÚÓïÒôÂ¼ÈëºÍÊ¶±ğÊ±×èÈûÓÎÏ·Ö÷Ïß³Ì£¬ÔÚSource/UnrealXunFeiSpeech/PublicÏÂ´´½¨`SpeechTask.h`£¬ÔÚSource/UnrealXunFeiSpeech/PrivateÏÂ´´½¨`SpeechTask.cpp`£¬²¢ÔÚÏîÄ¿ÖĞÌí¼Óµ½¶ÔÓ¦Ä¿Â¼ÏÂ
+#### 4. åˆ›å»º`FSpeechTask`ç±»
+FSpeechTaskç±»ç»§æ‰¿`FNonAbandonableTask`ï¼Œç”¨æ¥å°†è¯­éŸ³è¯†åˆ«ä½œä¸ºç‹¬ç«‹çº¿ç¨‹å¯åŠ¨ï¼Œé¿å…åœ¨è¯­éŸ³å½•å…¥å’Œè¯†åˆ«æ—¶é˜»å¡æ¸¸æˆä¸»çº¿ç¨‹ï¼Œåœ¨Source/UnrealXunFeiSpeech/Publicä¸‹åˆ›å»º`SpeechTask.h`ï¼Œåœ¨Source/UnrealXunFeiSpeech/Privateä¸‹åˆ›å»º`SpeechTask.cpp`ï¼Œå¹¶åœ¨é¡¹ç›®ä¸­æ·»åŠ åˆ°å¯¹åº”ç›®å½•ä¸‹
 > **[SpeechTask.h][SpeechTask.h] | [SpeechTask.cpp][SpeechTask.cpp]**
 ```C++
 #pragma once
@@ -410,15 +410,15 @@ class FSpeechTask : public FNonAbandonableTask
 };
 ```
 
-### **±àĞ´ASpeechActorÀà**
-`ASpeechActor`ÀàÎªÀ¶Í¼±©Â¶²Ù×÷·½·¨£¬°üº¬ÓïÒô³õÊ¼»¯¡¢´ò¿ªÂ¼Òô¡¢Í£Ö¹Â¼ÒôºÍÍË³öÂ¼ÒôÊÍ·Å×ÊÔ´²Ù×÷
+### **ç¼–å†™ASpeechActorç±»**
+`ASpeechActor`ç±»ä¸ºè“å›¾æš´éœ²æ“ä½œæ–¹æ³•ï¼ŒåŒ…å«è¯­éŸ³åˆå§‹åŒ–ã€æ‰“å¼€å½•éŸ³ã€åœæ­¢å½•éŸ³å’Œé€€å‡ºå½•éŸ³é‡Šæ”¾èµ„æºæ“ä½œ
 
 * [SpeechActor.h][SpeechActor.h] 
 ```C++ 
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
-//°üº¬SpeechTask£¬ÔÚ³õÊ¼»¯µÄÊ±ºò£¬Æô¶¯ÓïÒô¹¦ÄÜ
+//åŒ…å«SpeechTaskï¼Œåœ¨åˆå§‹åŒ–çš„æ—¶å€™ï¼Œå¯åŠ¨è¯­éŸ³åŠŸèƒ½
 #include "SpeechTask.h"
 
 #include "CoreMinimal.h"
@@ -430,7 +430,7 @@ class UNREALXUNFEISPEECH_API ASpeechActor : public AActor
 {
 	GENERATED_BODY()
 private:
-	//´æ·ÅÓïÒôÊ¶±ğ½á¹û
+	//å­˜æ”¾è¯­éŸ³è¯†åˆ«ç»“æœ
 	FString Result;
 
 public:	
@@ -469,7 +469,7 @@ public:
 #pragma once
 
 #include "SpeechActor.h"
-//ÒıÈëUnrealµÄJson¿â£¬ÓÃÀ´½âÎöÊ¶±ğ½á¹û(!!!×¢ÒâÔÚBuild.csÎÄ¼şµÄModuleÖĞ¼ÓÔØJson)
+//å¼•å…¥Unrealçš„Jsonåº“ï¼Œç”¨æ¥è§£æè¯†åˆ«ç»“æœ(!!!æ³¨æ„åœ¨Build.csæ–‡ä»¶çš„Moduleä¸­åŠ è½½Json)
 /*
 PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "Json" });
 */
@@ -503,12 +503,12 @@ void ASpeechActor::Tick(float DeltaTime)
 
 void ASpeechActor::SpeechInit()
 {
-	//´´½¨Ò»¸öSpeechTaskÈÎÎñÊµÀı
+	//åˆ›å»ºä¸€ä¸ªSpeechTaskä»»åŠ¡å®ä¾‹
 	FAutoDeleteAsyncTask<FSpeechTask>* SpeechTask = new FAutoDeleteAsyncTask<FSpeechTask>();
 
 	if (SpeechTask)
 	{
-		//Òì²½Æô¶¯SpeechTaskÊµÀı »áÈ¥µ¥¿ªÏß³ÌÒì²½Ö´ĞĞSpeechTaskÖĞµÄDoWork·½·¨
+		//å¼‚æ­¥å¯åŠ¨SpeechTaskå®ä¾‹ ä¼šå»å•å¼€çº¿ç¨‹å¼‚æ­¥æ‰§è¡ŒSpeechTaskä¸­çš„DoWorkæ–¹æ³•
 		SpeechTask->StartBackgroundTask();
 	}
 	else
@@ -536,14 +536,14 @@ void ASpeechActor::SpeechStop()
 void ASpeechActor::SpeechQuit()
 {
 	xunfeispeech->SetQuit();
-	Sleep(300);//ÑÓ³ÙµÈ´ı×ÊÔ´ÊÍ·ÅÍê³É
+	Sleep(300);//å»¶è¿Ÿç­‰å¾…èµ„æºé‡Šæ”¾å®Œæˆ
 	return;
 }
 
 FString ASpeechActor::SpeechResult()
 {	
 	Result = FString(UTF8_TO_TCHAR(xunfeispeech->get_result()));
-	//È¥µôÑ¶·ÉÉú³É½á¹ûÖĞµÄ±êµã·ûºÅjson´®
+	//å»æ‰è®¯é£ç”Ÿæˆç»“æœä¸­çš„æ ‡ç‚¹ç¬¦å·jsonä¸²
 	FString LajiString("{\"sn\":2,\"ls\":true,\"bg\":0,\"ed\":0,\"ws\":[{\"bg\":0,\"cw\":[{\"sc\":0.00,\"w\":\"\"}]}]}");
 	int32 LajiIndex = Result.Find(*LajiString);
 	if (LajiIndex != -1)
@@ -552,7 +552,7 @@ FString ASpeechActor::SpeechResult()
 	}
 	TSharedPtr<FJsonObject> JsonObject;
 	TSharedRef< TJsonReader<TCHAR> > Reader = TJsonReaderFactory<TCHAR>::Create(Result);
-	//½âÎö²¢Æ´½Ó½á¹û ·µ»Ø¸øµ÷ÓÃÕß(À¶Í¼)
+	//è§£æå¹¶æ‹¼æ¥ç»“æœ è¿”å›ç»™è°ƒç”¨è€…(è“å›¾)
 	if (FJsonSerializer::Deserialize(Reader, JsonObject))
 	{
 		Result.Reset();
@@ -571,17 +571,17 @@ FString ASpeechActor::SpeechResult()
 
 ```
 
-### **±àĞ´À¶Í¼½Å±¾Ê¾Àı**
-ÕâÀï¾Í±È½ÏËæÒâÀ²£¬ÔÚÀ¶Í¼ÖĞ¹¹½¨Ò»¸öSpeechActor¼´¿ÉÊ¹ÓÃÆäÖĞµÄ·½·¨
+### **ç¼–å†™è“å›¾è„šæœ¬ç¤ºä¾‹**
+è¿™é‡Œå°±æ¯”è¾ƒéšæ„å•¦ï¼Œåœ¨è“å›¾ä¸­æ„å»ºä¸€ä¸ªSpeechActorå³å¯ä½¿ç”¨å…¶ä¸­çš„æ–¹æ³•
 ![Blueprint][Blueprint]
-×¢Òâ£º
-1. **ÓïÒô³õÊ¼»¯ÔÚ¹Ø¿¨ÔËĞĞÊ±Ö»ĞèÒªÖ´ĞĞÒ»´Î£¬±ÜÃâÖØ¸´³õÊ¼»¯**
-2. **ÔÚ¹Ø¿¨½áÊøµÄÊ±ºò£¬»òÕßSpeechActorÊµÀı±»Ïú»ÙÖ®Ç°£¬ĞèÒªÖ´ĞĞSpeechQuit·½·¨£¬ÊÍ·ÅÓïÒô×ÊÔ´£¬·ñÔòÔÚ±¾´ÎÓÎÏ·ÊµÀıÖĞÎŞ·¨ÔÙ´Î³õÊ¼»¯**
-3. **ÔÚSpeechResultµ÷ÓÃÖ®Ç°Îñ±ØÑÓ³ÙÖÁÉÙ0.3Ãë£¬µÈ´ıÓïÒôÊ¶±ğ½á¹ûÍêÕû·µ»Ø**
-4. **ÇëÎñ±ØÊ¹ÓÃCustom EventµÄĞÎÊ½µ÷ÓÃSpeechResult£¬Èç¹ûÖ±½ÓÔÚÓÎÏ·Ö÷Ïß³ÌÖĞÖ±½ÓÊ¹ÓÃº¯Êıµ÷ÓÃ£¬»áÔì³ÉÓÎÏ·¿¨Ö¡**
+æ³¨æ„ï¼š
+1. **è¯­éŸ³åˆå§‹åŒ–åœ¨å…³å¡è¿è¡Œæ—¶åªéœ€è¦æ‰§è¡Œä¸€æ¬¡ï¼Œé¿å…é‡å¤åˆå§‹åŒ–**
+2. **åœ¨å…³å¡ç»“æŸçš„æ—¶å€™ï¼Œæˆ–è€…SpeechActorå®ä¾‹è¢«é”€æ¯ä¹‹å‰ï¼Œéœ€è¦æ‰§è¡ŒSpeechQuitæ–¹æ³•ï¼Œé‡Šæ”¾è¯­éŸ³èµ„æºï¼Œå¦åˆ™åœ¨æœ¬æ¬¡æ¸¸æˆå®ä¾‹ä¸­æ— æ³•å†æ¬¡åˆå§‹åŒ–**
+3. **åœ¨SpeechResultè°ƒç”¨ä¹‹å‰åŠ¡å¿…å»¶è¿Ÿè‡³å°‘0.3ç§’ï¼Œç­‰å¾…è¯­éŸ³è¯†åˆ«ç»“æœå®Œæ•´è¿”å›**
+4. **è¯·åŠ¡å¿…ä½¿ç”¨Custom Eventçš„å½¢å¼è°ƒç”¨SpeechResultï¼Œå¦‚æœç›´æ¥åœ¨æ¸¸æˆä¸»çº¿ç¨‹ä¸­ç›´æ¥ä½¿ç”¨å‡½æ•°è°ƒç”¨ï¼Œä¼šé€ æˆæ¸¸æˆå¡å¸§**
 
-> **²¹³ä**
-Èç¹û³öÏÖÊ¶±ğ×¼È·ÂÊ²»¹»£¬»òÕß¶Ô×Ô¼ºµÄ´ÊÓï²»Ì«ÓÑºÃ£¬¿ÉÒÔÔÚ¹Ù·½Æ½Ì¨µÄ`Ó¦ÓÃ¹ÜÀí>ÓïÒôÌıĞ´>¸öĞÔ»¯ÌıĞ´`Ò³ÃæÉÏ´«ÈÈ´ÊÎÄ¼ş£¬¿ÉÒÔÓÅ»¯Ê¶±ğÂÊ¡£
+> **è¡¥å……**
+å¦‚æœå‡ºç°è¯†åˆ«å‡†ç¡®ç‡ä¸å¤Ÿï¼Œæˆ–è€…å¯¹è‡ªå·±çš„è¯è¯­ä¸å¤ªå‹å¥½ï¼Œå¯ä»¥åœ¨å®˜æ–¹å¹³å°çš„`åº”ç”¨ç®¡ç†>è¯­éŸ³å¬å†™>ä¸ªæ€§åŒ–å¬å†™`é¡µé¢ä¸Šä¼ çƒ­è¯æ–‡ä»¶ï¼Œå¯ä»¥ä¼˜åŒ–è¯†åˆ«ç‡ã€‚
 
 [WinRec.h]: https://github.com/303snowing/UnrealXunFeiSpeech/blob/master/Source/UnrealXunFeiSpeech/Public/WinRec.h
 [WinRec.cpp]: https://github.com/303snowing/UnrealXunFeiSpeech/blob/master/Source/UnrealXunFeiSpeech/Private/WinRec.cpp
