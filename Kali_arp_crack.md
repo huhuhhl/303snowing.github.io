@@ -7,7 +7,7 @@
     > fping -asg [host]
     更多参数使用 fping -help
     ```shell
-    eg: fping -asg 192.168.0.0
+    eg: fping -asg 192.168.0.0/24
     ```
     
     * 局域网断网攻击：
